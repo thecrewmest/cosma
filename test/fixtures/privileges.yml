@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  create_right: false
+  read_right: false
+  update_right: false
+  delete_right: false
+
+two:
+  user_id: 1
+  create_right: false
+  read_right: false
+  update_right: false
+  delete_right: false
