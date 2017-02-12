@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
   <head>
     <title><%= yield :title %></title>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -37,7 +37,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="<%= include_class %>">
     <%= yield %>
 
     <!-- start: MAIN JAVASCRIPTS -->

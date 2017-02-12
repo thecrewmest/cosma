@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root to: 'site#index'
 
+  get '/dashboard', to: 'app#index'
+
   get '/signup', to: 'users#new'
   
   get '/login', to: 'sessions#new'

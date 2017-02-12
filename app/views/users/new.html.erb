@@ -11,38 +11,35 @@
             <p class="text-center">
                 Your account will be created in less than a minute:
             </p>
-            <form class="form-register">
-                <div class="errorHandler alert alert-danger no-display">
-                    <i class="fa fa-remove-sign"></i> You have some form errors. Please check below.
-                </div>
+            <%= form_for :user, html: {:class => 'form-register'} do |f| %>
                 <fieldset>
                     <div class="form-group">
                         <span class="input-icon">
-                            <input type="text" class="form-control" placeholder="First Name">
+                            <%= f.text_field :first_name, class: 'form-control', placeholder: 'First Name' %>
                             <i class="fa fa-user"></i>
                         </span>
                     </div>
                     <div class="form-group">
                         <span class="input-icon">
-                            <input type="text" class="form-control"  placeholder="Last Name">
+                            <%= f.text_field :last_name, class: 'form-control', placeholder: 'Last Name' %>
                             <i class="fa fa-user"></i>
                         </span>
                     </div>
                     <div class="form-group">
                         <span class="input-icon">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <%= f.email_field :email, class: 'form-control', placeholder: 'Email' %>
                             <i class="fa fa-envelope"></i>
                         </span>
                     </div>
                     <div class="form-group">
                         <span class="input-icon">
-                            <input type="text" class="form-control" placeholder="Company">
+                            <%= f.text_field :company, class: 'form-control', placeholder: 'Company' %>
                             <i class="fa fa-suitcase"></i>
                         </span>
                     </div>
                     <div class="form-group">
                         <span class="input-icon">
-                            <input type="password" class="form-control" placeholder="Password">
+                            <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
                             <i class="fa fa-lock"></i>
                         </span>
                     </div>
@@ -50,15 +47,16 @@
                         <p>Already have an acccount?</p>
                     </div>
                     <div class="form-actions">
-                        <a class="btn btn-light-grey go-back">
-                            <i class="fa fa-circle-arrow-left"></i> Sign in here
-                        </a>
-                        <button type="submit" class="btn btn-bricky pull-right">
+                        <%= link_to login_path, class: 'btn btn-light-grey' do %>
+                          <i class="fa fa-arrow-circle-left"></i> Sign in here
+                        <% end %>
+
+                        <%= button_tag type: 'submit', class: 'btn btn-bricky pull-right', data: {disable_with: "Sign Up..."} do %>
                             Sign Up <i class="fa fa-arrow-circle-right"></i>
-                        </button>
+                        <% end %>
                     </div>
                 </fieldset>
-            </form>
+            <% end %>
         </div>
         <!-- end: REGISTER BOX -->
 

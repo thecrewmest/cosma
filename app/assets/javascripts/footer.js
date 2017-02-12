@@ -16,7 +16,7 @@
 //= require perfect-scrollbar/perfect-scrollbar.jquery
 //= require jquery-cookie/jquery.cookie
 //= require sweetalert/sweetalert.min
-//= require main
+//= require dashboard/main
 //= require flot/jquery.flot
 //= require flot/jquery.flot.pie
 //= require flot/jquery.flot.resize
@@ -26,6 +26,6 @@
 //= require jquery-ui-touch-punch/jquery.ui.touch-punch.min
 //= require moment/moment.min
 //= require fullcalendar/fullcalendar.min
-//= require index
-//= require init
+//= require dashboard/index
+//= require dashboard/init
 
