@@ -20,9 +20,12 @@ var AppHeader = React.createClass({
                         <div className="nav nav-right">
                             <li className="dropdown">
                                 <a data-hover="dropdown" className="dropdown-toggle" data-close-others="true" href="#">
-
+                                    <i className="clip-list-5"></i>
+                                    <span className="badge"> 12</span>
                                 </a>
                             </li>
+                            {/* Dropdown to-do*/}
+                            {/* End Dropdown to-do*/}
                         </div>
                     </div>
                     {/* End Navabr tools*/}

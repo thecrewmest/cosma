@@ -41,8 +41,10 @@
     <%= yield %>
 
     <!-- start: MAIN JAVASCRIPTS -->
-    <%= javascript_include_tag  'footer', 'data-turbolinks-track': 'reload' %>
-    <!-- endd  MAIN JAVASCRIPTS -->
+    <% if controller_name != 'site' %>
+      <%= javascript_include_tag  'footer', 'data-turbolinks-track': 'reload' %>
+      <!-- endd  MAIN JAVASCRIPTS -->
+     <% end %>
 
     <% if controller_name == 'site' %>
       <%= javascript_include_tag  'site', 'data-turbolinks-track': 'reload' %>
