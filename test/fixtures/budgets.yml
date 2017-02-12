@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  amount: 1
-  extra_cost: 1
+  task_id: 1
+  amount: 9.99
+  extra_cost: 9.99
 
 two:
-  amount: 1
-  extra_cost: 1
+  task_id: 1
+  amount: 9.99
+  extra_cost: 9.99

@@ -1,17 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyString
+  user_id: 1
+  project_id: 1
+  title: MyText
+  description: MyText
   status: MyString
   progress: 1
-  start_date: 2017-02-06 12:59:56
-  end_date: 2017-02-06 12:59:56
+  start_date: 2017-02-08 17:04:49
+  end_date: 2017-02-08 17:04:49
 
 two:
-  title: MyString
-  description: MyString
+  user_id: 1
+  project_id: 1
+  title: MyText
+  description: MyText
   status: MyString
   progress: 1
-  start_date: 2017-02-06 12:59:56
-  end_date: 2017-02-06 12:59:56
+  start_date: 2017-02-08 17:04:49
+  end_date: 2017-02-08 17:04:49

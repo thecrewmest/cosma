@@ -10,24 +10,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170206132452) do
+ActiveRecord::Schema.define(version: 20170208061220) do
 
-  create_table "attachments", force: :cascade do |t|
-    t.string   "description"
+  create_table "atttachments", force: :cascade do |t|
+    t.integer  "project_id"
+    t.integer  "issue_id"
+    t.integer  "task_id"
+    t.text     "description"
     t.string   "attachment_name"
-    t.string   "attachment_url"
+    t.text     "attachment_url"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
 
   create_table "budgets", force: :cascade do |t|
-    t.integer  "amount"
-    t.integer  "extra_cost"
+    t.integer  "task_id"
+    t.decimal  "amount"
+    t.decimal  "extra_cost"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
+  create_table "inventories", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "project_id"
+    t.text     "stock_title"
+    t.integer  "quantity"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "issues", force: :cascade do |t|
+    t.integer  "task_id"
+    t.integer  "user_id"
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
@@ -45,8 +61,8 @@ ActiveRecord::Schema.define(version: 20170206132452) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
-    t.string   "description"
-    t.string   "image_url"
+    t.text     "description"
+    t.text     "cover_image"
     t.integer  "progress"
     t.boolean  "is_archived"
     t.datetime "date_archived"
@@ -55,8 +71,10 @@ ActiveRecord::Schema.define(version: 20170206132452) do
   end
 
   create_table "tasks", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
+    t.integer  "user_id"
+    t.integer  "project_id"
+    t.text     "title"
+    t.text     "description"
     t.string   "status"
     t.integer  "progress"
     t.datetime "start_date"
@@ -67,10 +85,15 @@ ActiveRecord::Schema.define(version: 20170206132452) do
 
   create_table "users", force: :cascade do |t|
     t.string   "username"
+    t.string   "phone"
+    t.string   "company"
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "email"
-    t.string   "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "profile_image"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end

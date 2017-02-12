@@ -2,16 +2,16 @@
 
 one:
   title: MyString
-  description: MyString
-  image_url: MyString
+  description: MyText
+  cover_image: MyText
   progress: 1
   is_archived: false
-  date_archived: 2017-02-06 12:41:34
+  date_archived: 2017-02-08 16:59:01
 
 two:
   title: MyString
-  description: MyString
-  image_url: MyString
+  description: MyText
+  cover_image: MyText
   progress: 1
   is_archived: false
-  date_archived: 2017-02-06 12:41:34
+  date_archived: 2017-02-08 16:59:01

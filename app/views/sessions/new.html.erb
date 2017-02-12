@@ -1,0 +1,34 @@
+<% provide :title, 'Bidii | Sign In Page'	 %>
+    <div class="main-login col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+       <%=render "layouts/image"%>
+        <!-- start: LOGIN BOX -->
+        <div class="box-login">
+            <h3 class="text-center">Sign in to your account</h3>
+            <p class="text-center">
+                Please enter your name and password to log in.
+            </p>
+            <%= form_for :users do |f| %>
+      
+        <%= f.text_field :email, class: 'form-control',placeholder: 'Email' %><br>
+
+        <%= f.password_field :password, class: 'form-control',placeholder: 'password'%>
+
+
+        <%= link_to "I forgot my password" %><br><br>
+        
+        <%= f.check_box :attribute %>  Keep me signed in<br><br>
+        
+        <%= f.submit "Login", class: "btn btn-primary" %> 
+        
+        <div class="myLogin">
+                Dont have an account yet?   <%= link_to "Create an account" %> 
+        </div>
+      
+    <% end %>
+        </div>
+        <!-- end: LOGIN BOX -->
+
+        <!-- start: COPYRIGHT -->
+        <%= render 'layouts/account_footer' %>
+        <!-- end: COPYRIGHT -->
+    </div>

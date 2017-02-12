@@ -2,10 +2,20 @@
 
 one:
   username: MyString
+  phone: MyString
+  company: MyString
+  first_name: MyString
+  last_name: MyString
   email: MyString
-  password: MyString
+  profile_image: MyString
+  password_digest: MyString
 
 two:
   username: MyString
+  phone: MyString
+  company: MyString
+  first_name: MyString
+  last_name: MyString
   email: MyString
-  password: MyString
+  profile_image: MyString
+  password_digest: MyString
