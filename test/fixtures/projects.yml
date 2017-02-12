@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  cover_image: MyText
+  progress: 1
+  is_archived: false
+  date_archived: 2017-02-08 16:59:01
+
+two:
+  title: MyString
+  description: MyText
+  cover_image: MyText
+  progress: 1
+  is_archived: false
+  date_archived: 2017-02-08 16:59:01

@@ -1,0 +1,71 @@
+<% provide :title, 'Bidii | Sign Up Page'	%>
+
+<div class="main-login col-sm-4 col-sm-offset-4">
+        <div class="logo text-center">
+            <%= image_tag 'user.png', alt: 'user' %>
+        </div>
+        
+        <!-- start: REGISTER BOX -->
+        <div class="box-register">
+            <h3 class="text-center">Sign Up</h3>
+            <p class="text-center">
+                Your account will be created in less than a minute:
+            </p>
+            <form class="form-register">
+                <div class="errorHandler alert alert-danger no-display">
+                    <i class="fa fa-remove-sign"></i> You have some form errors. Please check below.
+                </div>
+                <fieldset>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <input type="text" class="form-control" placeholder="First Name">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <input type="text" class="form-control"  placeholder="Last Name">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <input type="email" class="form-control" placeholder="Email">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <input type="text" class="form-control" placeholder="Company">
+                            <i class="fa fa-suitcase"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <input type="password" class="form-control" placeholder="Password">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <p>Already have an acccount?</p>
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn btn-light-grey go-back">
+                            <i class="fa fa-circle-arrow-left"></i> Sign in here
+                        </a>
+                        <button type="submit" class="btn btn-bricky pull-right">
+                            Sign Up <i class="fa fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!-- end: REGISTER BOX -->
+
+        <!-- start: COPYRIGHT -->
+        <%= render 'layouts/account_footer' %>
+        <!-- end: COPYRIGHT -->
+    </div>
+
+
+
