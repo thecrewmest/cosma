@@ -113,8 +113,8 @@ Version      : 1.0
 		
 		/*START TESTIMONIAL JS*/
 		$('.carousel').carousel({
-			interval:5000,
-			pause:'false',
+			interval:2000,
+			pause:'false'
 		});
 		/*END TESTIMONIAL JS*/
 	

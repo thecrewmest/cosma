@@ -9,7 +9,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to image_tag('site/logo.png', alt: 'Logo'), root_path, class: 'navbar-brand' %>
+      <%#= link_to image_tag('site/logo.png', alt: 'Logo'), root_path, class: 'navbar-brand' %>
+      <%= link_to 'BIDII', root_path, class: 'navbar-brand' %>
     </div>
     <div class="navbar-collapse collapse">
       <nav>
@@ -37,13 +38,14 @@
   <ul class="cd-hero-slider autoplay">
     <li class="selected">
       <div class="slider-image">
-        <%= image_tag 'site/efficients1.jpg', alt: '' %>
+
+        <%= link_to image_tag 'site/slider3.jpg', alt: '' %>
       </div>
 
 
       <div class="cd-full-width">
-        <h2>Simple - Easy - Effecient</h2>
-        <p>Use Cosmo to manage your construction projects effectively</p>
+        <h2>Simple - Easy - Efficient</h2>
+        <p>Use BIDII to manage your construction projects effectively</p>
         <%= link_to 'SignUp', signup_path, class: 'cd-btn btn-home-bg' %>
         <%= link_to 'Login', login_path, class: 'cd-btn btn-home-border' %>
       </div> <!-- .cd-full-width -->
@@ -56,7 +58,7 @@
       </div>
 
       <div class="cd-half-width text-left">
-        <h2>Manage your construction projects with Cosm</h2>
+        <h2>Manage your construction projects with BIDII</h2>
         <p>Biddi is a simple and very easy to use. </p>
         <%= link_to 'SignUp', signup_path, class: 'cd-btn btn-home-bg' %>
         <%= link_to 'Login', login_path, class: 'cd-btn btn-home-border' %>
@@ -70,7 +72,7 @@
 
     <li>
       <div class="slider-image">
-        <%= image_tag 'site/slider3.jpg', alt: '' %>
+        <%= image_tag 'site/joinus.jpg', alt: '' %>
       </div>
       <!-- .cd-half-width.cd-img-container -->
       <div class="cd-half-width text-left">
@@ -248,42 +250,33 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="partner wow fadeInRight">
+
                   <a href="#" target="_blank">
-                    <%= image_tag 'site/Bidii.jpg', alt: 'image'  %>
-                    <h3 id="tm"></h3>
-                    <span></span>
-                  </a>
-                  <a href="#" target="_blank">
-                    <%= image_tag 'site/kelvin.jpg', alt: 'Kelvin'  %>
+                    <%= image_tag 'site/kelvin.jpg', alt: 'kelvin' %>
                     <h3 id="tm">Kelvin</h3>
                     <span>Business Lead</span>
                   </a>
                   <a href="#" target="_blank">
-                    <%= image_tag 'site/duncan.jpg', alt: 'Duncan'  %>
+                    <%= image_tag 'site/duncan.jpg', alt: 'Duncan' %>
                     <h3 id="tm">Duncan</h3>
                     <span>Product Manager</span>
                   </a>
                   <a href="#" target="_blank">
-                    <%= image_tag 'site/joseph.png', alt: 'Joseph'  %>
+                    <%= image_tag 'site/joseph.jpg', alt: 'Joseph' %>
                     <h3 id="tm">Joseph</h3>
                     <span>Back-End Developer</span>
                   </a>
                   <a href="#" target="_blank">
-                    <%= image_tag 'site/vansolo.jpg', alt: 'Vansolo'  %>
-                    <h3 id="tm">Van solo</h3>
+                    <%= image_tag 'site/vansolo.jpg', alt: 'Vansolo' %>
+                    <h3 id="tm">Vansolo</h3>
                     <span>Front-End Developer</span>
                   </a>
                   <a href="#" target="_blank">
-                    <%= image_tag 'site/gerald.jpg', alt: 'Gerald'  %>
+                    <%= image_tag 'site/gerald.jpg', alt: 'Gerald' %>
                     <h3 id="tm">Gerald</h3>
                     <span>Business and Communication</span>
                   </a>
-                  <a href="#" target="_blank">
-                    <%= image_tag 'site/gerald.jpg', alt: 'Gerald'  %>
-                    <%= image_tag 'site/Bidii.jpg', alt: 'image'  %>
-                    <h3 id="tm"></h3>
-                    <span></span>
-                  </a>
+
 
                 </div>
               </div>

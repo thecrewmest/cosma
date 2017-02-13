@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170208061220) do
+ActiveRecord::Schema.define(version: 20170212153841) do
 
   create_table "atttachments", force: :cascade do |t|
     t.integer  "project_id"
@@ -84,14 +84,14 @@ ActiveRecord::Schema.define(version: 20170208061220) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "username"
-    t.string   "phone"
-    t.string   "company"
     t.string   "first_name"
     t.string   "last_name"
+    t.string   "phone"
     t.string   "email"
-    t.string   "profile_image"
-    t.string   "password_digest"
+    t.string   "company"
+    t.text     "profile_image"
+    t.text     "password_digest"
+    t.text     "remember_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end

@@ -9,43 +9,39 @@
             <p class="text-center">
                 Please enter your name and password to log in.
             </p>
-            <form class="form-login" action="#">
-                <div class="errorHandler alert alert-danger no-display">
-                    <i class="fa fa-remove-sign"></i> You have some form errors. Please check below.
-                </div>
+            <%= form_for :user, html: {:class => 'form-login'} do |f| %>
                 <fieldset>
                     <div class="form-group">
                         <span class="input-icon">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <%= f.email_field :email, class: 'form-control', placeholder: 'Email' %>
                             <i class="fa fa-user"></i>
                         </span>
                     </div>
                     <div class="form-group form-actions">
                         <span class="input-icon">
-                            <input type="password" class="form-control password" name="password" placeholder="Password">
+                            <%= f.password_field :password, class: 'form-control password', placeholder: 'Password' %><br>
                             <i class="fa fa-lock"></i>
-                            <a class="forgot" href="#">
-                                I forgot my password
-                            </a>
+                            <%= link_to 'I forgot my password', forgot_password_path %>
                         </span>
                     </div>
                     <div class="form-actions">
-                        <label for="remember" class="checkbox-inline">
-                            <input type="checkbox" class="grey remember" id="remember" name="remember">
-                            Keep me signed in
-                        </label>
-                        <button type="submit" class="btn btn-bricky pull-right">
-                            Login <i class="fa fa-arrow-circle-right"></i>
-                        </button>
+                        <%=	f.label :remember, class: 'checkbox-inline' do  %>
+                            <%=	f.check_box :remember, class: 'grey remember' %>
+                          <span>Keep me signed in</span>
+                        <% end  %>
+
+                      <%= button_tag type: 'submit', class: 'btn btn-bricky pull-right', data: {disable_with: "Login..."} do %>
+                          Login <i class="fa fa-arrow-circle-right"></i>
+                      <% end %>
+
                     </div>
                     <div class="new-account">
                         Don't have an account yet?
-                        <a href="#" class="register">
-                            Create an account
-                        </a>
+                        <%= link_to 'Create an account', signup_path, class: 'register' %>
                     </div>
                 </fieldset>
-            </form>
+            <% end %>
+
         </div>
         <!-- end: LOGIN BOX -->
 
