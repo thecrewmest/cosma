@@ -10,17 +10,88 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170206200945) do
+ActiveRecord::Schema.define(version: 20170212153841) do
+
+  create_table "atttachments", force: :cascade do |t|
+    t.integer  "project_id"
+    t.integer  "issue_id"
+    t.integer  "task_id"
+    t.text     "description"
+    t.string   "attachment_name"
+    t.text     "attachment_url"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "budgets", force: :cascade do |t|
+    t.integer  "task_id"
+    t.decimal  "amount"
+    t.decimal  "extra_cost"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
+  create_table "inventories", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "project_id"
+    t.text     "stock_title"
+    t.integer  "quantity"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "issues", force: :cascade do |t|
+    t.integer  "task_id"
+    t.integer  "user_id"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "privileges", force: :cascade do |t|
+    t.integer  "user_id"
+    t.boolean  "create_right"
+    t.boolean  "read_right"
+    t.boolean  "update_right"
+    t.boolean  "delete_right"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.text     "cover_image"
+    t.integer  "progress"
+    t.boolean  "is_archived"
+    t.datetime "date_archived"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "project_id"
+    t.text     "title"
+    t.text     "description"
+    t.string   "status"
+    t.integer  "progress"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
-    t.string   "username"
-    t.string   "phone"
-    t.string   "company"
     t.string   "first_name"
     t.string   "last_name"
+    t.string   "phone"
     t.string   "email"
-    t.string   "profile_image"
-    t.string   "password_digest"
+    t.string   "company"
+    t.text     "profile_image"
+    t.text     "password_digest"
+    t.text     "remember_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end

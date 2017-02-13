@@ -1,0 +1,69 @@
+<% provide :title, 'Bidii | Sign Up Page'	%>
+
+<div class="main-login col-sm-4 col-sm-offset-4">
+        <div class="logo text-center">
+            <%= image_tag 'user.png', alt: 'user' %>
+        </div>
+        
+        <!-- start: REGISTER BOX -->
+        <div class="box-register">
+            <h3 class="text-center">Sign Up</h3>
+            <p class="text-center">
+                Your account will be created in less than a minute:
+            </p>
+            <%= form_for :user, html: {:class => 'form-register'} do |f| %>
+                <fieldset>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <%= f.text_field :first_name, class: 'form-control', placeholder: 'First Name' %>
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <%= f.text_field :last_name, class: 'form-control', placeholder: 'Last Name' %>
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <%= f.email_field :email, class: 'form-control', placeholder: 'Email' %>
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <%= f.text_field :company, class: 'form-control', placeholder: 'Company' %>
+                            <i class="fa fa-suitcase"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
+                            <i class="fa fa-lock"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <p>Already have an acccount?</p>
+                    </div>
+                    <div class="form-actions">
+                        <%= link_to login_path, class: 'btn btn-light-grey' do %>
+                          <i class="fa fa-arrow-circle-left"></i> Sign in here
+                        <% end %>
+
+                        <%= button_tag type: 'submit', class: 'btn btn-bricky pull-right', data: {disable_with: "Sign Up..."} do %>
+                            Sign Up <i class="fa fa-arrow-circle-right"></i>
+                        <% end %>
+                    </div>
+                </fieldset>
+            <% end %>
+        </div>
+        <!-- end: REGISTER BOX -->
+
+        <!-- start: COPYRIGHT -->
+        <%= render 'layouts/account_footer' %>
+        <!-- end: COPYRIGHT -->
+    </div>
+
+
+

@@ -1,0 +1,417 @@
+<% provide :title, 'Bidii | Construction Project Management App' %>
+<!-- START NAVBAR -->
+<div class="navbar navbar-default navbar-fixed-top menu-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%#= link_to image_tag('site/logo.png', alt: 'Logo'), root_path, class: 'navbar-brand' %>
+      <%= link_to 'BIDII', root_path, class: 'navbar-brand' %>
+    </div>
+    <div class="navbar-collapse collapse">
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="#home">Home</a></li>
+          <li><a class="page-scroll" href="#features">Features</a></li>
+          <li><a class="page-scroll" href="#team">Team</a></li>
+          <li><a class="page-scroll" href="#contact">Contact</a></li>
+          <li>
+            <%= link_to 'SignUp', signup_path, class: "page-scroll" %>
+          </li>
+          <li>
+            <%= link_to 'Login', login_path %>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div><!--- END CONTAINER -->
+</div>
+<!-- END NAVBAR -->
+
+<!-- START HOME DESIGN -->
+
+<section class="cd-hero" id="home">
+  <ul class="cd-hero-slider autoplay">
+    <li class="selected">
+      <div class="slider-image">
+
+        <%= link_to image_tag 'site/slider3.jpg', alt: '' %>
+      </div>
+
+
+      <div class="cd-full-width">
+        <h2>Simple - Easy - Efficient</h2>
+        <p>Use BIDII to manage your construction projects effectively</p>
+        <%= link_to 'SignUp', signup_path, class: 'cd-btn btn-home-bg' %>
+        <%= link_to 'Login', login_path, class: 'cd-btn btn-home-border' %>
+      </div> <!-- .cd-full-width -->
+
+    </li>
+
+    <li>
+      <div class="slider-image">
+        <%=	image_tag 'site/cosmo2.jpg', alt: '' %>
+      </div>
+
+      <div class="cd-half-width text-left">
+        <h2>Manage your construction projects with BIDII</h2>
+        <p>Biddi is a simple and very easy to use. </p>
+        <%= link_to 'SignUp', signup_path, class: 'cd-btn btn-home-bg' %>
+        <%= link_to 'Login', login_path, class: 'cd-btn btn-home-border' %>
+      </div> <!-- .cd-half-width -->
+
+
+      <!-- .cd-half-width.cd-img-container -->
+
+
+    </li>
+
+    <li>
+      <div class="slider-image">
+        <%= image_tag 'site/joinus.jpg', alt: '' %>
+      </div>
+      <!-- .cd-half-width.cd-img-container -->
+      <div class="cd-half-width text-left">
+        <h2>Try Bidii Today</h2>
+        <p>Bidii is a simple project management tool design for architects, contractors and project managers.</p>
+        <%= link_to 'SignUp', signup_path, class: 'cd-btn btn-home-bg' %>
+        <%= link_to 'Login', login_path, class: 'cd-btn btn-home-border' %>
+      </div> <!-- .cd-half-width -->
+
+    </li>
+
+    <li class="cd-bg-video">
+
+      <div class="cd-full-width">
+        <h2>Save time and resources with Bidii</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+        <%= link_to 'SignUp', signup_path, class: 'cd-btn btn-home-bg' %>
+        <%= link_to 'Login', login_path, class: 'cd-btn btn-home-border' %>
+      </div> <!-- .cd-full-width -->
+
+      <div class="slider-image"></div>
+
+      <div class="slider-image">
+        <%= image_tag 'site/cosmo4.jpg', alt: '' %>
+      </div>
+
+    </li>
+
+  </ul> <!-- .cd-hero-slider -->
+
+  <div class="cd-slider-nav">
+    <nav>
+      <span class="cd-marker item-1"></span>
+
+      <ul>
+        <li class="selected"><a href="#0"><i class="fa fa-home"></i>Intro</a></li>
+        <li><a href="#0"><i class="fa fa-briefcase"></i>Manage</a></li>
+        <li><a href="#0"><i class="fa fa-globe"></i>Join Us</a></li>
+        <li><a href="#0"><i class="fa fa-video-camera"></i>Save time</a></li>
+      </ul>
+    </nav>
+  </div> <!-- .cd-slider-nav --><!-- .cd-slider-nav -->
+</section> <!-- .cd-hero -->
+
+<!-- START FEATURE-->
+<section id="features" class="feature section-padding" style="background: lightblue;">
+  <div class="container">
+    <div class="row">
+
+      <div class="section-title text-center wow zoomIn">
+        <h2>Bidii <span>Features</span></h2>
+
+
+
+        <div></div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-12 single_about wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+        <i class="fa fa-tablet"></i>
+        <h4>Task Manager</h4>
+        <p>Easy and simple task management tool, makes monitoring easier.</p>
+      </div><!--- END COL -->
+      <div class="col-md-2 col-sm-6 col-xs-12 single_about wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+        <i class="fa fa-life-ring"></i>
+        <h4>Budgeter</h4>
+        <p>A budgeting functionality for project.</p>
+      </div><!--- END COL -->
+      <div class="col-md-2 col-sm-6 col-xs-12 single_about wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+        <i class="fa fa-paper-plane-o"></i>
+        <h4>Inventory</h4>
+        <p>Keep track of materials and supplies.</p>
+      </div><!--- END COL -->
+      <div class="col-md-2 col-sm-6 col-xs-12 single_about wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+        <i class="fa fa-file-text-o"></i>
+        <h4>Reports</h4>
+        <p>Handle issues/concerns raise by workers.</p>
+      </div><!--- END COL -->
+      <!--- END COL -->
+      <div class="col-md-3 col-sm-6 col-xs-12 single_about wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+        <i class="fa fa-paper-plane-o"></i>
+        <h4>Collaboration</h4>
+        <p>Cosma's collaborative functionality adds extra gear to your project.</p>
+      </div><!--- END COL -->
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+</section>
+<!-- END FEATURE -->
+
+
+
+<!-- START WHY CHOOSE US -->
+<section class="why_choose_us section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center wow zoomIn">
+        <h2>Why <span>choose</span> Bidii</h2>
+        <div></div>
+      </div>
+
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="feature_img">
+          <%= image_tag 'site/men.png', class: 'img-responsive', alt: 'men' %>
+        </div>
+      </div><!--- END COL -->
+
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div id="why_choose">
+          <!-- Wrapper for slides -->
+          <div class="row ">
+
+            <div class="col-sm-6">
+              <div class="single_feature">
+                <i class="fa fa-pencil-square-o"></i>
+                <h3>Simple</h3>
+                <span></span>
+                <p>Unlike the others, Cosma is much simple to use </p>
+              </div>
+            </div><!-- END col-sm-6 -->
+
+            <div class="col-sm-6">
+              <div class="single_feature">
+                <i class="fa fa-magic"></i>
+                <h3>Affordable</h3>
+                <span></span>
+                <p>Despite it's efficiency, Cosma is relatively cheaper.</p>
+              </div>
+            </div><!-- END col-sm-6 -->
+
+            <div class="col-sm-6">
+              <div class="single_feature">
+                <i class="fa fa-html5"></i>
+                <h3>Efficient</h3>
+                <span></span>
+                <p>Cosma is not only simple and affordabl, it actually gets the work done. </p>
+              </div>
+            </div><!-- END col-sm-6 -->
+
+            <div class="col-sm-6">
+              <div class="single_feature">
+                <i class="fa fa-heart-o"></i>
+                <h3>Industry specific</h3>
+                <span></span>
+                <p>Specifically built to suit your needs</p>
+              </div>
+            </div><!-- END col-sm-6 -->
+
+          </div><!-- END CAROUSEL INNER -->
+        </div><!-- END CAROUSEL SLIDE -->
+      </div><!--- END COL -->
+
+
+
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+</section>
+<!-- END WHY CHOOSE US -->
+
+
+
+
+
+
+
+<!-- START OUR TEAM -->
+<section id="team" class="our_team section-padding" style="background: lightblue;">
+  <div class="container">
+    <div class="row text-center" style="background: lightblue;">
+      <div class="section-title wow zoomIn">
+        <h2>The <span>Team</span></h2>
+        <div></div>
+      </div>
+      <div class="partner-logo section-padding">
+        <div class="partner_overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="partner wow fadeInRight">
+
+                  <a href="#" target="_blank">
+                    <%= image_tag 'site/kelvin.jpg', alt: 'kelvin' %>
+                    <h3 id="tm">Kelvin</h3>
+                    <span>Business Lead</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <%= image_tag 'site/duncan.jpg', alt: 'Duncan' %>
+                    <h3 id="tm">Duncan</h3>
+                    <span>Product Manager</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <%= image_tag 'site/joseph.jpg', alt: 'Joseph' %>
+                    <h3 id="tm">Joseph</h3>
+                    <span>Back-End Developer</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <%= image_tag 'site/vansolo.jpg', alt: 'Vansolo' %>
+                    <h3 id="tm">Vansolo</h3>
+                    <span>Front-End Developer</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <%= image_tag 'site/gerald.jpg', alt: 'Gerald' %>
+                    <h3 id="tm">Gerald</h3>
+                    <span>Business and Communication</span>
+                  </a>
+
+
+                </div>
+              </div>
+            </div><!-- END COL  -->
+          </div><!--END  ROW  -->
+        </div><!-- END CONTAINER  -->
+      </div><!-- END OVERLAY -->
+    </div>
+  </div>
+  </div>
+</section>
+<!-- END TEAM -->
+
+<!-- START NEWSLETTER -->
+<section class="newsletter" style="background-image: url(/assets/site/newsletter-bg.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;">
+  <div class="newsletter_overlay section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-12 col-xs-12 center-block text-center">
+          <div class="signup_form">
+            <h3>Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!</h3>
+            <!-- Replace the form action in the line below with your MailChimp embed action! -->
+            <form action="http://site90.us11.list-manage.com/subscribe/post?u=599a2153f4b86cb2f92d4af3a&amp;id=26d7c26287" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <input type="email" name="EMAIL" class="form-control" id="mce-email" placeholder="Enter Email">
+              <span><button type="submit" name="subscribe" class="btn btn-detault btn-light-bg">Subscribe</button></span>
+              <div id="mce-responses">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+            </form>
+          </div>
+        </div><!-- END COL  -->
+      </div><!-- END ROW  -->
+    </div><!-- END CONTAINER -->
+  </div><!-- END NEWSLERTTER OVERLAY -->
+</section>
+<!-- END NEWSLETTER -->
+
+
+
+
+
+
+
+<!-- START CONTACT FORM-->
+<section id="contact" class="contact_area section-padding" style="background: lightblue;">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center wow zoomIn">
+        <h2>Get IN <span>Touch</span></h2>
+        <div></div>
+      </div>
+      <div class="col-md-8 col-sm-8 center-block col-xs-12 wow fadeInRight">
+        <div class="contact">
+          <form id="contact-form" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="form-group col-md-12">
+                <input type="text" name="name" class="form-control" id="first-name" placeholder="Name" required="required">
+              </div>
+              <div class="form-group col-md-12">
+                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required">
+              </div>
+              <div class="form-group col-md-12">
+                <textarea rows="6" name="message" class="form-control" id="description" placeholder="Your Message" required="required"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div class="actions">
+                  <input type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Submit Your Message!" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div><!-- END COL -->
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+</section>
+<!-- END CONTACT FORM -->
+
+
+
+
+<!---Login in modal-->
+
+
+
+<!-- START MAP -->
+<!-- map js -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
+<script>
+    function initialize() {
+        var mapOptions = {
+            zoom: 15,
+
+            scrollwheel: false,
+            center: new google.maps.LatLng(5.644429,-0.1537547,17),
+
+        };
+        var map = new google.maps.Map(document.getElementById('map'),
+            mapOptions);
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            icon: '/assets/site/map-pin.png',
+            map: map,
+
+        });
+
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<div id="map"></div>
+<!-- END MAP -->
+
+<!-- START FOOTER -->
+<footer class="footer section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center wow zoomIn">
+        <div class="footer_content">
+          <!--<div class="col-sm-2 center-block"><a href="index.html"><img src="assets/img/logo.png" alt="" /></a></div>-->
+          <div class="footer_social">
+            <ul>
+              <li><a class="f_facebook  wow bounceInDown" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="f_twitter wow bounceInDown" data-wow-delay=".1s" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="f_google wow bounceInDown" data-wow-delay=".2s" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="f_linkedin wow bounceInDown" data-wow-delay=".3s" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="f_youtube wow bounceInDown" data-wow-delay=".4s" href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a class="f_skype wow bounceInDown" data-wow-delay=".5s" href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+          </div>
+          <p>Bidii &copy; 2017 All Rights Reserved.</p>
+        </div>
+
+      </div><!--- END COL -->
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+</footer>
+<!-- END FOOTER -->

@@ -1,0 +1,51 @@
+<% provide :title, 'Bidii | Sign In Page'	 %>
+    <div class="main-login col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+        <div class="logo text-center">
+            <%= image_tag 'user.png', alt: 'user' %>
+        </div>
+        <!-- start: LOGIN BOX -->
+        <div class="box-login">
+            <h3 class="text-center">Sign in to your account</h3>
+            <p class="text-center">
+                Please enter your name and password to log in.
+            </p>
+            <%= form_for :user, html: {:class => 'form-login'} do |f| %>
+                <fieldset>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <%= f.email_field :email, class: 'form-control', placeholder: 'Email' %>
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    <div class="form-group form-actions">
+                        <span class="input-icon">
+                            <%= f.password_field :password, class: 'form-control password', placeholder: 'Password' %><br>
+                            <i class="fa fa-lock"></i>
+                            <%= link_to 'I forgot my password', forgot_password_path %>
+                        </span>
+                    </div>
+                    <div class="form-actions">
+                        <%=	f.label :remember, class: 'checkbox-inline' do  %>
+                            <%=	f.check_box :remember, class: 'grey remember' %>
+                          <span>Keep me signed in</span>
+                        <% end  %>
+
+                      <%= button_tag type: 'submit', class: 'btn btn-bricky pull-right', data: {disable_with: "Login..."} do %>
+                          Login <i class="fa fa-arrow-circle-right"></i>
+                      <% end %>
+
+                    </div>
+                    <div class="new-account">
+                        Don't have an account yet?
+                        <%= link_to 'Create an account', signup_path, class: 'register' %>
+                    </div>
+                </fieldset>
+            <% end %>
+
+        </div>
+        <!-- end: LOGIN BOX -->
+
+        <!-- start: COPYRIGHT -->
+        <%= render 'layouts/account_footer' %>
+        <!-- end: COPYRIGHT -->
+    </div>
