@@ -1,14 +1,16 @@
-var App = React.createClass({
+const App = React.createClass({
     render() {
         return(
             <div>
-                <div className="navbar-inverse navbar-fixed-top">
+                <div className="navbar navbar-inverse navbar-fixed-top">
                     <AppHeader />
                     <AppPropertiesTab />
-                    <AppContent />
+                    <VariablePropTab />
                 </div>
+
                 <div className="main-container">
-                    <AppProjectContent />
+                    {/*<AppContent />*/}
+                    <Project />
                 </div>
             </div>
         )

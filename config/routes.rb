@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'app#index'
 
   get '/signup', to: 'users#new'
-  
+
+  post '/signup', to: 'users#create'
+
   get '/login', to: 'sessions#new'
 
   get '/forgot_password', to: 'sessions#forgot_password'

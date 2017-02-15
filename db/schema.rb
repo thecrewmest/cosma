@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170212153841) do
+ActiveRecord::Schema.define(version: 20170215232200) do
 
   create_table "atttachments", force: :cascade do |t|
     t.integer  "project_id"
@@ -81,6 +81,8 @@ ActiveRecord::Schema.define(version: 20170212153841) do
     t.datetime "end_date"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.decimal  "budget"
+    t.decimal  "cost"
   end
 
   create_table "users", force: :cascade do |t|
@@ -94,6 +96,7 @@ ActiveRecord::Schema.define(version: 20170212153841) do
     t.text     "remember_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end

@@ -11,13 +11,21 @@
  * It is generally better to create a new file per style scope.
 
 *= require dashboard/clip-font.scss
+*= require genicons/genicons.css
 *= require perfect-scrollbar/perfect-scrollbar.min
-*= require sweetalert/sweetalert
+* require sweetalert/sweetalert
 *= require dashboard/main
 *= require dashboard/main-responsive
-*= require dashboard/print
+* require dashboard/print
 *= require dashboard/light
-*= require fullcalendar/fullcalendar.min
-*= require dashboard/custom.scss
+* require bootstrap-datepicker/bootstrap-datepicker.standalone.min
+*= require select2/select2.min
+*= require bootstrap-datepicker/bootstrap-datepicker.min
+*= require jquery.tagsinput/jquery.tagsinput.min
+*= require bootstrap-fileinput/fileinput.min
+* require fullcalendar/fullcalendar.min
+*= require bootstrap-modal/bootstrap-modal-bs3patch
+*= require bootstrap-modal/bootstrap-modal
+*= require dashboard/custom
 *= require_self
  */

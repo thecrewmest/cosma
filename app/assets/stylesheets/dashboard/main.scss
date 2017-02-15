@@ -49,11 +49,12 @@ body a:hover {
 }
 
 .main-container {
-    margin-top: 48px
+    margin-top: 48px;
 }
 
 .page-full-width .main-container {
-    margin-top: 98px
+    margin-top: 140px;
+    //border: 1px solid #000;
 }
 
 .header-default .main-container {
@@ -63,7 +64,7 @@ body a:hover {
 .main-content {
     margin-top: 0;
     background-color: #fff;
-    padding: 0
+    padding: 0;
 }
 
 .container {

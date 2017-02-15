@@ -2,5 +2,218 @@ div.login.copyright {
     font-size: 12px;
     margin: 0 auto;
     padding: 20px 10px 0;
-    text-align: center
+    text-align: center;
 }
+
+.side-bar {
+  background-color: #f5f5f5;
+  padding: 10px 10px;
+}
+
+/* APP CONTENT STYLES */
+
+
+/* Side Panel */
+
+.variable-content {
+  border: 1px solid #000;
+}
+
+.static-side-bar {
+  position: fixed;
+  width: 25%;
+  top: 140px;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 25px;
+}
+
+.p-l-15 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.p-l-100 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+
+
+/* DRILL DOWN STYLES */
+
+.drill-criteria {
+  border-right: 1px solid rgba(0,0,0, 0.3);
+  padding: 0 5px 0 6px;
+  background: #F5F4F9;
+}
+
+.drill-criteria .head {
+  padding: 15px 0 0 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 7px;
+}
+
+
+.drill-criteria .checkbox {
+  padding-left: 15px;
+}
+
+.drill-criteria span.reload {
+  line-height: 30px;
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+}
+
+
+.drill-criteria .input-sm {
+  margin-top: 10px;
+}
+
+
+/* Drill Down Icons */
+.text-warm-grey-4 {
+  color: #8C8884;
+}
+
+.text-warm-grey-5 {
+  color: #6E6769;
+}
+
+.text-task-light-green {
+  color: #6DBF87;
+}
+
+.text-task-amber {
+  color: #FF7404;
+}
+
+.text-task-red {
+  color: #F12B5E;
+}
+
+.text-task-blue {
+  color: #04BBDC!important;
+}
+
+.text-task-dark-green {
+  color: #457B56!important;
+}
+
+.g-sm {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+/* Project Component Style */
+.arc-red {
+  color: red;
+}
+
+#projects_divs{
+  background: lightblue;
+  height: 260px;
+  max-height: 300px;
+  border: 2px solid black;
+  margin-left: 20px;
+
+}
+
+#project1{
+  background: lightblue;
+  border: 2px solid lightblue;
+  height: 278px;
+  margin-top: 20px;
+  border-left: 5px solid white;
+
+
+}
+
+#edit-icon{
+  height: 20px;
+  width: 20px;
+}
+
+.edit-a{
+  margin-left: 250px;
+  cursor: pointer;
+}
+
+.td1{
+  width: 232px; height: 40px; background: white; padding-left: 10px; padding-right: 10px; text-align: left;
+}
+.td2{
+  width: 232px; height: 40px; background: white; padding-left: 10px; padding-right: 10px; text-align: right;
+}
+
+.progressbar_div{
+  width: 256px;
+  height: 20px;
+  background: green;
+}
+
+#add_proj {
+  margin-top: 20px;
+  border: 1px solid lightblue;
+  height: 280px;
+  padding-top: 90px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.add-img{
+  padding-left: 32px;
+  padding-top: 25px;
+  height: 210px;
+  width: 230px;
+
+
+}
+
+.project_description{
+  display: inline-flexbox;
+
+}
+
+#project_pic_div{
+  height: 195px;
+  width: 272px;
+  margin-top: 6px;
+  margin-bottom: 1px;
+}
+
+.btn-blue {
+  background: #007AFF;
+}
+
+
+.h4{
+  color: black;
+
+}
+
+/*ALL IOONS HERE*/
+.genicon-add-circle{
+  font-size: 50pt;
+}
+
+
+/* Archieved projects details */
+#archieved_projects_details{
+  text-align: right;
+  height: 30px;
+}
+
+#archieved_projects_details_name{
+  height: 30px;
+}
+
+#archieved_list{
+  margin-top: 10px;
+}
+

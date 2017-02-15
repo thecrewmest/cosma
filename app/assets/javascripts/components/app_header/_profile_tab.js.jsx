@@ -17,6 +17,9 @@ var ProfileTab = React.createClass({
                         <a href="javascript:void(0)">
                             <i className="clip-phone"></i> &nbsp;0547558472
                         </a>
+                         <a href="javascript:void(0)">
+                             <i className="clip-archive"></i> &nbsp;themestcrew
+                         </a>
                         <li>
                             <a href="javascript:void(0)">
                                 dynamickossi@yahoo.com
