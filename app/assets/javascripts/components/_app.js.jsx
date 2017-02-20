@@ -3,14 +3,11 @@ const App = React.createClass({
         return(
             <div>
                 <div className="navbar navbar-inverse navbar-fixed-top">
-                    <AppHeader />
-                    <AppPropertiesTab />
-                    <VariablePropTab />
+                    <Header />
                 </div>
 
                 <div className="main-container">
-                    {/*<AppContent />*/}
-                    <Project />
+                    <Body />
                 </div>
             </div>
         )

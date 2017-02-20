@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170215232200) do
+ActiveRecord::Schema.define(version: 20170219125349) do
 
   create_table "atttachments", force: :cascade do |t|
     t.integer  "project_id"
@@ -59,6 +59,13 @@ ActiveRecord::Schema.define(version: 20170215232200) do
     t.datetime "updated_at",   null: false
   end
 
+  create_table "projectizations", force: :cascade do |t|
+    t.integer  "project_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
@@ -68,10 +75,10 @@ ActiveRecord::Schema.define(version: 20170215232200) do
     t.datetime "date_archived"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.decimal  "budget"
   end
 
   create_table "tasks", force: :cascade do |t|
-    t.integer  "user_id"
     t.integer  "project_id"
     t.text     "title"
     t.text     "description"
@@ -97,6 +104,13 @@ ActiveRecord::Schema.define(version: 20170215232200) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.index ["email"], name: "index_users_on_email", unique: true
+  end
+
+  create_table "workmanships", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "task_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

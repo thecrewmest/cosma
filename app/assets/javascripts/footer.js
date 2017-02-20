@@ -26,6 +26,7 @@
 // require jquery-ui-touch-punch/jquery.ui.touch-punch.min
 //= require moment/moment.min
 //= require autosize/autosize.min
+// require select2/select-2-bootstrap
 //= require select2/select2.min
 //= require bootstrap-datepicker/bootstrap-datepicker.min
 //= require jquery.tagsinput/jquery.tagsinput
@@ -35,6 +36,17 @@
 //= require bootstrap-modal/bootstrap-modal
 //= require bootstrap-modal/bootstrap-modalmanager
 //= require dashboard/ui-modals.min
+//= require bootbox/bootbox
+//= require jquery-mockjax/jquery.mockjax.min
+//= require datatables/jquery.dataTables.min
+//= require datatables.net-buttons/dataTables.buttons.min
+//= require datatables.net-buttons/buttons.flash.min
+//= require jszip/jszip.min
+//= require pdfmake/pdfmake.min
+//= require pdfmake/vfs_fonts.js
+//= require datatables.net-buttons/buttons.html5
+//= require datatables.net-buttons/buttons.print
+//= require dashboard/table-export.js
 // require fullcalendar/fullcalendar.min
 // require dashboard/index
 //= require dashboard/init

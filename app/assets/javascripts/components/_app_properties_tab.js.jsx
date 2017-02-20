@@ -6,17 +6,17 @@ var AppPropertiesTab = React.createClass({
                     {/* Properties Component */}
                     <ul className="nav navbar-nav">
                         <li className="active">
-                            <a href="#">
+                            <a href="/dashboard">
                                 Projects
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/drilldown">
                                 Drill down
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/task_sheet">
                                 Task sheet
                             </a>
                         </li>

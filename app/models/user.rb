@@ -1,4 +1,9 @@
 class User < ApplicationRecord
+  has_many :projectizations
+  has_many :projects, :through => :projectizations
+  has_many :workmanships
+  has_many :tasks, :through => :workmanships
+
   attr_accessor :remember_token
   before_save { email.downcase! }
 
@@ -8,7 +13,7 @@ class User < ApplicationRecord
             length: { maximum: 255 },
             uniqueness: { case_senitive: false}
   validates :company, presence: true, length: {maximum: 255 }
-  validates :password, presence: true, length: {minmum: 6}
+  validates :password, presence: true, length: {minimum: 6}
 
   has_secure_password
 

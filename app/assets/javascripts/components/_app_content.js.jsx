@@ -1,7 +1,7 @@
 var AppContent = React.createClass({
     render() {
         return(
-            <div className="container p-l-15">
+            <div className="p-l-15">
                 <div className="row">
                     {/* Left Sidebar*/}
                     <div className="col-sm-3">

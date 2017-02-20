@@ -10,13 +10,23 @@ Rails.application.routes.draw do
 
   get '/login', to: 'sessions#new'
 
+  post '/login', to: 'sessions#create'
+
+  get '/drilldown', to: 'app#drill'
+
+  get '/overview', to: 'app#overview'
+
+  get '/budget', to: 'app#budget'
+
+  get '/task', to: 'app#task'
+
+  get '/collaborator', to: 'app#collaborator'
+
   get '/forgot_password', to: 'sessions#forgot_password'
-  
-  get 'pages/index'
 
   namespace :api do
     namespace :v1 do
-      
+      resources :projects, only: [:index, :create, :destroy, :update]
     end
   end
 
