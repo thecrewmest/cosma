@@ -24,7 +24,7 @@
 // require jquery-easy-pie-chart/jquery.easypiechart.min
 // require jquery-easy-pie-chart/jquery.easypiechart.min
 // require jquery-ui-touch-punch/jquery.ui.touch-punch.min
-//= require moment/moment.min
+// require moment/moment.min
 //= require autosize/autosize.min
 // require select2/select-2-bootstrap
 //= require select2/select2.min

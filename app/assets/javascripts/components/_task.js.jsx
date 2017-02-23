@@ -12,7 +12,7 @@ const Task = React.createClass({
 
         function addTaskModal() {
             return (
-                <div id="newTask" className="modal fade" tabIndex="-1" data-width="600" style={newProjectModalStyle}>
+                <div id="newTask" className="modal fade" tabIndex="-1" data-width="600" style={{display: 'none'}}>
                     <div className="modal-header">
                         <button type="button" className="close" data-dismiss="modal" aria-hidden="true">
                             &times;
@@ -226,6 +226,7 @@ const Task = React.createClass({
                                             <thead>
                                             <tr>
                                                 <th style={{width: 1 + "%"}}><input type="checkbox"/></th>
+                                                <th>Tuid</th>
                                                 <th style={{width: 30 + "%"}} className="col-to-export">Title</th>
                                                 <th style={{width: 12 + "%"}} className="col-to-export">Start</th>
                                                 <th style={{width: 5 + "%"}} className="col-to-export">Duration</th>
@@ -239,12 +240,13 @@ const Task = React.createClass({
                                             <tbody>
                                             <tr>
                                                 <th><input type="checkbox"/></th>
+                                                <th>1001</th>
                                                 <td>Build site structure</td>
-                                                <td>2017-01-03</td>
+                                                <td>2017-01-02</td>
                                                 <td>5d</td>
-                                                <td>2018-02-08</td>
-                                                <td>10%</td>
-                                                <td>building, furnishing</td>
+                                                <td>2017-01-06</td>
+                                                <td>100%</td>
+                                                <td>building</td>
                                                 <td>Joseph</td>
                                                 <td>
                                                     <a href="#" className="data-tb-link" title="Edit">
@@ -259,13 +261,14 @@ const Task = React.createClass({
                                             </tr>
                                             <tr>
                                                 <th><input type="checkbox"/></th>
+                                                <th>1002</th>
                                                 <td>Paint the the outside walls</td>
-                                                <td>2016-06-12</td>
-                                                <td>10d</td>
-                                                <td>2018-07-11</td>
+                                                <td>2017-01-06</td>
+                                                <td>2d</td>
+                                                <td>2017-01-07</td>
                                                 <td>30%</td>
-                                                <td>building, roofing, paint</td>
-                                                <td>Joseph</td>
+                                                <td>painting</td>
+                                                <td>Gerald</td>
                                                 <td>
                                                     <a href="#" className="data-tb-link" title="Edit">
                                                         <span className="edit-row genicon-pencil-boxed-compact" />
@@ -279,12 +282,13 @@ const Task = React.createClass({
                                             </tr>
                                             <tr>
                                                 <th><input type="checkbox"/></th>
+                                                <th>1003</th>
                                                 <td>Fix the kitchen cabinet</td>
-                                                <td>2017-10-02</td>
-                                                <td>10d</td>
-                                                <td>2018-12-08</td>
+                                                <td>2017-02-01</td>
+                                                <td>3d</td>
+                                                <td>2017-02-03</td>
                                                 <td>30%</td>
-                                                <td>building, roofing, paint</td>
+                                                <td>kitchen works</td>
                                                 <td>Joseph</td>
                                                 <td>
                                                     <a href="#" className="data-tb-link" title="Edit">
@@ -299,13 +303,98 @@ const Task = React.createClass({
                                             </tr>
                                             <tr>
                                                 <th><input type="checkbox"/></th>
+                                                <th>2005</th>
                                                 <td>Interior designing</td>
-                                                <td>2017-10-02</td>
-                                                <td>10d</td>
-                                                <td>2018-12-08</td>
-                                                <td>90%</td>
-                                                <td>building, roofing, paint</td>
-                                                <td>Joseph</td>
+                                                <td>2017-01-09</td>
+                                                <td>1w</td>
+                                                <td>2017-01-13</td>
+                                                <td>15%</td>
+                                                <td>design</td>
+                                                <td>Solomon</td>
+                                                <td>
+                                                    <a href="#" className="data-tb-link" title="Edit">
+                                                        <span className="edit-row genicon-pencil-boxed-compact" />
+                                                    </a>
+                                                    <a href="#" className="data-tb-link" title="Delete">
+                                                        <span style={{color: '#777'}} className="delete-row genicon-trash-stroke-compact" />
+                                                    </a>
+                                                </td>
+                                                {/*<td><a href="javscript:void(0)" className="edit-row"> Edit </a></td>*/}
+                                                {/*<td><a href="javscript:void(0)" className="delete-row"> Delete </a></td>*/}
+                                            </tr>
+                                            <tr>
+                                                <th><input type="checkbox"/></th>
+                                                <th>2007</th>
+                                                <td>Site Survey</td>
+                                                <td>2017-01-17</td>
+                                                <td>1w</td>
+                                                <td>2017-01-21</td>
+                                                <td>100%</td>
+                                                <td>survey, structure</td>
+                                                <td>Samuel</td>
+                                                <td>
+                                                    <a href="#" className="data-tb-link" title="Edit">
+                                                        <span className="edit-row genicon-pencil-boxed-compact" />
+                                                    </a>
+                                                    <a href="#" className="data-tb-link" title="Delete">
+                                                        <span style={{color: '#777'}} className="delete-row genicon-trash-stroke-compact" />
+                                                    </a>
+                                                </td>
+                                                {/*<td><a href="javscript:void(0)" className="edit-row"> Edit </a></td>*/}
+                                                {/*<td><a href="javscript:void(0)" className="delete-row"> Delete </a></td>*/}
+                                            </tr>
+                                            <tr>
+                                                <th><input type="checkbox"/></th>
+                                                <th>2009</th>
+                                                <td>laying the foundation</td>
+                                                <td>2017-01-23</td>
+                                                <td>4d</td>
+                                                <td>2017-01-26</td>
+                                                <td>0%</td>
+                                                <td>survey, structure</td>
+                                                <td>Samuel</td>
+                                                <td>
+                                                    <a href="#" className="data-tb-link" title="Edit">
+                                                        <span className="edit-row genicon-pencil-boxed-compact" />
+                                                    </a>
+                                                    <a href="#" className="data-tb-link" title="Delete">
+                                                        <span style={{color: '#777'}} className="delete-row genicon-trash-stroke-compact" />
+                                                    </a>
+                                                </td>
+                                                {/*<td><a href="javscript:void(0)" className="edit-row"> Edit </a></td>*/}
+                                                {/*<td><a href="javscript:void(0)" className="delete-row"> Delete </a></td>*/}
+                                            </tr>
+                                            <tr>
+                                                <th><input type="checkbox"/></th>
+                                                <th>2010</th>
+                                                <td>fencing of building</td>
+                                                <td>2017-02-06</td>
+                                                <td>2w</td>
+                                                <td>2017-02-17</td>
+                                                <td>1%</td>
+                                                <td>building</td>
+                                                <td>Samuel</td>
+                                                <td>
+                                                    <a href="#" className="data-tb-link" title="Edit">
+                                                        <span className="edit-row genicon-pencil-boxed-compact" />
+                                                    </a>
+                                                    <a href="#" className="data-tb-link" title="Delete">
+                                                        <span style={{color: '#777'}} className="delete-row genicon-trash-stroke-compact" />
+                                                    </a>
+                                                </td>
+                                                {/*<td><a href="javscript:void(0)" className="edit-row"> Edit </a></td>*/}
+                                                {/*<td><a href="javscript:void(0)" className="delete-row"> Delete </a></td>*/}
+                                            </tr>
+                                            <tr>
+                                                <th><input type="checkbox"/></th>
+                                                <th>2011</th>
+                                                <td>Door frames</td>
+                                                <td>2017-02-20</td>
+                                                <td>1w</td>
+                                                <td>2017-02-25</td>
+                                                <td>1%</td>
+                                                <td>carpentry</td>
+                                                <td>Samuel</td>
                                                 <td>
                                                     <a href="#" className="data-tb-link" title="Edit">
                                                         <span className="edit-row genicon-pencil-boxed-compact" />

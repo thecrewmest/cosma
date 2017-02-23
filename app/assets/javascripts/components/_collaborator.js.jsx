@@ -11,7 +11,7 @@ const Collaborator = React.createClass({
                 </div>
 
                 <div className="main-container">
-                    <NewTask />
+
                 </div>
             </div>
         )

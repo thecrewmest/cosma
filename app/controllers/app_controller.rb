@@ -19,4 +19,11 @@ class AppController < ApplicationController
 
   def budget
   end
+
+  def tasksheet
+  end
+
+  def profile
+
+  end
 end

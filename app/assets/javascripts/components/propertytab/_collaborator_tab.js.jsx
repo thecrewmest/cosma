@@ -23,40 +23,53 @@ var CollaboratorTab = React.createClass({
                             <div className="circle">
                                 <a href="#collaborators-edit-user-modal" id="edit-icon-user" data-toggle="modal"><img
                                     src="/assets/edit-icon.png" id="edit-icon"/></a>
+                                <h4 className="text-center awaiting-confirm">Awaiting <br />Confirmation</h4>
                             </div>
-                            <div className="col-md-12 col-xs-12" id="collaborator-details-div">
-                                <span className="collaborator-name">Van Solo</span><br />
-                                <span className="collaborator-privellege">Project Admin</span><br />
-                                <span className="collaborator-phone">+233-54-969-1947</span><br />
-                                <span className="collaborator-email">vansolo33@gmail.com</span><br />
-                                <span className="collaborator-lastupdate">January 15, 2017</span><br />
+                            <div className="col-md-12 col-xs-12 text-center" id="collaborator-details-div">
+                                {/*<span className="collaborator-name">Samuel Acheampong</span><br />*/}
+                                <span className="collaborator-privellege ct">Project Admin</span>
+                                {/*<span className="collaborator-phone">+233-54-969-1947</span><br />*/}
+                                <span className="collaborator-email ct">sameulfelix@gmail.com</span>
+                                <span className="collaborator-lastupdate ct">January, 02 2017</span>
                             </div>
 
                         </div>
                         <div className="col-md-2 col-xs-12">
-                            <div className="circle">
+                            <div className="circle1">
                                 <a href="#collaborators-edit-user-modal" id="edit-icon-user" data-toggle="modal"><img
                                     src="/assets/edit-icon.png" id="edit-icon"/></a>
                             </div>
                             <div className="col-md-12 col-xs-12" id="collaborator-details-div">
-                                <span className="collaborator-name">Donald Trump</span><br />
-                                <span className="collaborator-privellege">Member</span><br />
-                                <span className="collaborator-phone">+233-54-969-1947</span><br />
-                                <span className="collaborator-email">vansolo33@gmail.com</span><br />
-                                <span className="collaborator-lastupdate">January 15, 2017</span><br />
+                                <span className="collaborator-name ct">Samuel Acheampong</span>
+                                <span className="collaborator-privellege ct">Member</span>
+                                <span className="collaborator-phone ct">+233-54-969-1947</span>
+                                <span className="collaborator-email ct">samuel33@gmail.com</span>
+                                <span className="collaborator-lastupdate ct">January 15, 2017</span>
                             </div>
                         </div>
                         <div className="col-md-2 col-xs-12">
-                            <div className="circle">
+                            <div className="circle3">
+                                <a href="#collaborators-edit-user-modal" id="edit-icon-user" data-toggle="modal"><img
+                                    src="/assets/edit-icon.png" id="edit-icon"/></a>
+                                <h4 className="text-center awaiting-confirm">Awaiting <br />Confirmation</h4>
+                            </div>
+                            <div className="col-md-12 col-xs-12" id="collaborator-details-div">
+                                <span className="collaborator-privellege ct">Member</span>
+                                <span className="collaborator-email ct">adjei31@yahoo.com</span>
+                                <span className="collaborator-lastupdate ct">January 15, 2017</span>
+                            </div>
+                        </div>
+                        <div className="col-md-2 col-xs-12">
+                            <div className="circle2">
                                 <a href="#collaborators-edit-user-modal" id="edit-icon-user" data-toggle="modal"><img
                                     src="/assets/edit-icon.png" id="edit-icon"/></a>
                             </div>
                             <div className="col-md-12 col-xs-12" id="collaborator-details-div">
-                                <span className="collaborator-name">Michael Jackson</span><br />
-                                <span className="collaborator-privellege">Member</span><br />
-                                <span className="collaborator-phone">+233-54-969-1947</span><br />
-                                <span className="collaborator-email">vansolo33@gmail.com</span><br />
-                                <span className="collaborator-lastupdate">January 15, 2017</span><br />
+                                <span className="collaborator-name ct">John Muruiki</span>
+                                <span className="collaborator-privellege ct">Project Owner</span>
+                                <span className="collaborator-phone ct">+233-54-755-847</span>
+                                <span className="collaborator-email ct">johnmuruiki@gmail.com</span>
+                                <span className="collaborator-lastupdate ct">January 15, 2017</span>
                             </div>
                         </div>
 
@@ -64,7 +77,7 @@ var CollaboratorTab = React.createClass({
 
                     {/*collabrator modal*/}
                     <div id="collaborators-modal" className="modal fade" tabIndex="-1" data-width="500"
-                         style={newProjectModalStyle}>
+                         style={{display: 'none'}}>
                         <div className="modal-header">
                             <button type="button" className="close" data-dismiss="modal" aria-hidden="true">
                                 &times;
@@ -110,9 +123,10 @@ var CollaboratorTab = React.createClass({
                             </button>
                         </div>
                     </div>
+
                     {/*Update company modal*/}
                     <div id="collaborators-edit-company-name-modal" className="modal fade" tabIndex="-1"
-                         data-width="500" style={newProjectModalStyle}>
+                         data-width="500" style={{display: 'none'}}>
                         <div className="modal-header">
                             <button type="button" className="close" data-dismiss="modal" aria-hidden="true">
                                 &times;
@@ -146,9 +160,10 @@ var CollaboratorTab = React.createClass({
                             </button>
                         </div>
                     </div>
+
                     {/*Update collaborator modal*/}
                     <div id="collaborators-edit-user-modal" className="modal fade" tabIndex="-1" data-width="500"
-                         style={newProjectModalStyle}>
+                         style={{display: 'none'}}>
                         <div className="modal-header">
                             <button type="button" className="close" data-dismiss="modal" aria-hidden="true">
                                 &times;

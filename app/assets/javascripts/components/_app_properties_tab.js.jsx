@@ -16,7 +16,7 @@ var AppPropertiesTab = React.createClass({
                             </a>
                         </li>
                         <li>
-                            <a href="/task_sheet">
+                            <a href="/tasksheet">
                                 Task sheet
                             </a>
                         </li>

@@ -14,12 +14,12 @@ var PendingTask = React.createClass({
         return (
             <li className="dropdown">
                 <a data-toggle="dropdown" data-hover="dropdown" className="dropdown-toggle" data-close-others="true" href="#">
-                    <i className="clip-list-5"></i>
-                    <span className="badge"> 12</span>
+                    <i className="clip-list-5" />
+                    <span className="badge"> 4</span>
                 </a>
                 <ul className="dropdown-menu todo">
                     <li>
-                        <span className="dropdown-menu-title"> You have 12 pending tasks</span>
+                        <span className="dropdown-menu-title"> You have 4+ pending tasks</span>
                     </li>
                     <li>
                         <div className="drop-down-wrapper">
@@ -27,78 +27,29 @@ var PendingTask = React.createClass({
                                 <li>
                                     <a className="todo-actions" href="javascript:void(0)">
                                         <i className="fa fa-square-o"></i>
-                                        <span className="desc" style={descStyle}>Staff Meeting</span>
+                                        <span className="desc" style={descStyle}>painting of rooms</span>
                                         <span className="label label-danger" style={labelStyle}> today</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a className="todo-actions" href="javascript:void(0)">
                                         <i className="fa fa-square-o"></i>
-                                        <span className="desc" style={descStyle}> New frontend layout</span>
+                                        <span className="desc" style={descStyle}>Plastering of wallls</span>
                                         <span className="label label-danger" style={labelStyle}> today</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a className="todo-actions" href="javascript:void(0)">
                                         <i className="fa fa-square-o"></i>
-                                        <span className="desc"> Hire developers</span>
+                                        <span className="desc"> Site survey</span>
                                         <span className="label label-warning"> tommorow</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a className="todo-actions" href="javascript:void(0)">
                                         <i className="fa fa-square-o"></i>
-                                        <span className="desc">Staff Meeting</span>
-                                        <span className="label label-warning"> tommorow</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="todo-actions" href="javascript:void(0)">
-                                        <i className="fa fa-square-o"></i>
-                                        <span className="desc"> New frontend layout</span>
+                                        <span className="desc"> Fixing of all plumbing works</span>
                                         <span className="label label-success"> this week</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="todo-actions" href="javascript:void(0)">
-                                        <i className="fa fa-square-o"></i>
-                                        <span className="desc"> Hire developers</span>
-                                        <span className="label label-success"> this week</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="todo-actions" href="javascript:void(0)">
-                                        <i className="fa fa-square-o"></i>
-                                        <span className="desc"> New frontend layout</span>
-                                        <span className="label label-info"> this month</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="todo-actions" href="javascript:void(0)">
-                                        <i className="fa fa-square-o"></i>
-                                        <span className="desc"> Hire developers</span>
-                                        <span className="label label-info"> this month</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="todo-actions" href="javascript:void(0)">
-                                        <i className="fa fa-square-o"></i>
-                                        <span className="desc" style={descStyle}>Staff Meeting</span>
-                                        <span className="label label-danger" style={labelStyle}> today</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="todo-actions" href="javascript:void(0)">
-                                        <i className="fa fa-square-o"></i>
-                                        <span className="desc" style={descStyle}> New frontend layout</span>
-                                        <span className="label label-danger" style={labelStyle}> today</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="todo-actions" href="javascript:void(0)">
-                                        <i className="fa fa-square-o"></i>
-                                        <span className="desc"> Hire developers</span>
-                                        <span className="label label-warning"> tommorow</span>
                                     </a>
                                 </li>
                             </ul>

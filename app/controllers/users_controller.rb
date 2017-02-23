@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.role = 'owner'
     if @user.save
       # Redirect to Dashboard
       log_in @user

@@ -18,6 +18,10 @@ Rails.application.routes.draw do
 
   get '/budget', to: 'app#budget'
 
+  get '/profile', to: 'app#profile'
+
+  get '/tasksheet', to: 'app#tasksheet'
+
   get '/task', to: 'app#task'
 
   get '/collaborator', to: 'app#collaborator'
@@ -27,6 +31,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :projects, only: [:index, :create, :destroy, :update]
+      get 'projects/archived'
     end
   end
 

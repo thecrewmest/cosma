@@ -1,6 +1,6 @@
 class Api::V1::ProjectsController < Api::V1::BaseController
   def index
-    respond_with Project.all.order('created_at DESC')
+    respond_with Project.where(is_archived: false).order('created_at DESC')
   end
 
   def create
@@ -17,8 +17,12 @@ class Api::V1::ProjectsController < Api::V1::BaseController
     respond_with project, json:project
   end
 
+  def archived
+    respond_with Project.where(is_archived: true)
+  end
+
   private
     def proj_params
-      params.require(:project).permit(:id, :title, :budget, :description)
+      params.require(:project).permit(:id, :title, :budget, :description, :is_archived)
     end
 end

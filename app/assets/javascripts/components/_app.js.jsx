@@ -1,4 +1,4 @@
-const App = React.createClass({
+let App = React.createClass({
     render() {
         return(
             <div>
@@ -7,7 +7,7 @@ const App = React.createClass({
                 </div>
 
                 <div className="main-container">
-                    <Body />
+                    <Dashboard />
                 </div>
             </div>
         )

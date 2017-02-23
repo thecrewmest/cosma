@@ -13,7 +13,6 @@ var AppContent = React.createClass({
                     {/* Main Content */}
                     <div className="col-sm-9">
                         <div className="variable-content">
-                            <NewTask />
                         </div>
                     </div>
                 </div>
