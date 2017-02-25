@@ -5,16 +5,33 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'app#index'
 
   get '/signup', to: 'users#new'
-  
+
+  post '/signup', to: 'users#create'
+
   get '/login', to: 'sessions#new'
 
+  post '/login', to: 'sessions#create'
+
+  get '/drilldown', to: 'app#drill'
+
+  get '/overview', to: 'app#overview'
+
+  get '/budget', to: 'app#budget'
+
+  get '/profile', to: 'app#profile'
+
+  get '/tasksheet', to: 'app#tasksheet'
+
+  get '/task', to: 'app#task'
+
+  get '/collaborator', to: 'app#collaborator'
+
   get '/forgot_password', to: 'sessions#forgot_password'
-  
-  get 'pages/index'
 
   namespace :api do
     namespace :v1 do
-      
+      resources :projects, only: [:index, :create, :destroy, :update]
+      get 'projects/archived'
     end
   end
 

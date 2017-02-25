@@ -11,7 +11,17 @@
             <p class="text-center">
                 Your account will be created in less than a minute:
             </p>
-            <%= form_for :user, html: {:class => 'form-register'} do |f| %>
+
+            <% if @user.errors.any? %>
+              <div class="alert alert-danger">
+                <% @user.errors.full_messages.each do |msg| %>
+                  <p><%= msg %></p>
+                <% end %>
+              </div>
+            <% end %>
+
+
+            <%= form_for(:user, url: signup_path, html: {:class => 'form-register'}) do |f| %>
                 <fieldset>
                     <div class="form-group">
                         <span class="input-icon">

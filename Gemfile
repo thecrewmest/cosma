@@ -29,6 +29,9 @@ gem 'coffee-rails', '~> 4.2'
 # Gem for the API Endpoints
 gem 'responders'
 
+# Gem for manipulating Javascript Dates
+gem 'momentjs-rails'
+
 # Gem for react-rails
 gem 'react-rails'
 

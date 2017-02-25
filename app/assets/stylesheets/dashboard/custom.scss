@@ -1,6 +1,1468 @@
+html, body {
+  background: #fff;
+}
+
 div.login.copyright {
     font-size: 12px;
     margin: 0 auto;
     padding: 20px 10px 0;
-    text-align: center
+    text-align: center;
 }
+
+.side-bar {
+  background-color: #EFEDE5;
+  padding: 10px 10px;
+  border-bottom: 1px solid #DCDAD2;
+}
+
+.btn-task-color {
+  color: #8C8884;
+}
+
+/* APP CONTENT STYLES */
+
+
+/* Side Panel */
+
+.variable-content {
+  /*border: 1px solid #000; */
+}
+
+.static-side-bar {
+  position: fixed;
+  width: 25%;
+  top: 140px;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 25px;
+}
+
+.p-l-15 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.p-l-100 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+
+/* Project Component Style */
+.arc-red {
+  color: red;
+}
+
+#projects_divs{
+  background: lightblue;
+  height: 260px;
+  max-height: 300px;
+  border: 2px solid black;
+  margin-left: 20px;
+
+}
+
+#project1{
+  background: #DCDAD2;
+  border: 2px solid #DCDAD2;
+  height: 278px;
+  margin-top: 20px;
+  border-left: 5px solid white;
+
+
+}
+
+#edit-icon{
+  height: 20px;
+  width: 20px;
+}
+
+.edit-a{
+  margin-left: 250px;
+  cursor: pointer;
+}
+.table-inside-project{
+  margin-top: 180px;
+}
+
+.p-content {
+  height: 40px;
+  background: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.p-content-title {
+  font-size: 13pt;
+  padding-top: 6px;
+}
+
+.p-content-progress {
+  font-size: 17pt;
+  font-weight: bold;
+  line-height: 20pt;
+  padding-top: 2px;
+}
+
+#pbar{
+  height: 20px;
+}
+
+#progressbar-success{
+  height: 20px;
+}
+
+#pbarDiv{
+  background: silver;
+  width: 100%;
+  margin-top: 180px;
+}
+
+.progress progress-sm progress-bar-success{
+  background: silver;
+  width: 175px;
+}
+
+.progressbar-td{
+  width: 175px;
+}
+
+
+
+#progressbarGreen{
+  height: 20px;
+}
+
+#add_proj {
+  margin-top: 20px;
+  border: 1px solid lightblue;
+  height: 278px;
+  padding-top: 90px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.add-img{
+  padding-left: 32px;
+  padding-top: 25px;
+  height: 210px;
+  width: 230px;
+}
+
+.project_description{
+  display: inline-flexbox;
+}
+
+#project_pic_div{
+  height: 195px;
+  width: 272px;
+  margin-top: 6px;
+  margin-bottom: 1px;
+
+}
+
+.btn-blue {
+  background: #007AFF;
+}
+
+
+.h4{
+  color: black;
+
+}
+
+/*ALL ICONS HERE*/
+.genicon-add-circle{
+  font-size: 50pt;
+}
+
+
+/* Archieved projects details */
+#archieved_projects_details{
+  text-align: right;
+  height: 30px;
+}
+
+#archieved_projects_details_name{
+  height: 30px;
+}
+
+#archieved_list{
+  margin-top: 10px;
+}
+
+.body{
+  background: lightblue;
+}
+
+#topbar{
+  background: silver;
+  height: 40px;
+}
+
+#main{
+  background: silver;
+  height: 650px;
+}
+
+#download_pdf, #download_word{
+  height: 40px;
+  background: lightblue;
+}
+
+#download_bidii{
+  height: 40px;
+  background: lightblue;
+}
+
+.file{
+  color: black;
+}
+
+.project_tittle{
+  font-size: 15pt;
+}
+
+#sidebar{
+  height: 600px;
+  background: lightblue;
+}
+
+#content{
+  background: silver;
+}
+
+#status-sidebar {
+
+  height: 30px;
+  background: silver;
+  text-align: left;
+  padding-top: 10px
+}
+
+#icon-sidebar{
+  text-align: right;
+  background: silver;
+  height: 30px;
+  padding-top: 10px;
+}
+
+/* ============Inside side bare=============== */
+.days{
+  font-size: 50pt;
+}
+#days_remaining_div{
+  margin-left: 80px;
+}
+
+#bardiv
+{
+  background: green;
+  height: 30px;
+}
+
+#percentage_comp_div{
+  margin-left: 50px;
+}
+
+.completed{
+  margin-right: 10px;
+  font-size: 20pt;
+
+}
+
+.progressbar_div{
+  width: 200px;
+  height: 20px;
+  background: green;
+  margin-top: 3px;
+}
+
+#project_stats{
+  color: red;
+}
+
+
+#icon{
+  font-size: 20pt;
+}
+
+.text-task-lightgreen, .text-task-amber, .text-task-red{
+  font-size: 20pt;
+  vertical-align: middle;
+}
+
+.text-task-ligtgreen {
+  color: lightgreen;
+}
+
+.text-task-red{
+  color: red;
+}
+
+/* Adding a  Task */
+
+
+
+
+/* ====================end of side bar======================*/
+
+/*========inside main content=================*/
+#tasks-ongoing{
+  background: silver;
+  height: 30px;
+}
+
+.genicon-task-hammer{
+  font-size: 15pt;
+}
+
+#tittle{
+  background: silver;
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
+  height: 45px;
+  padding-top: 7px;
+  text-align: left;
+}
+
+.genicon-tick-boxed-compact{
+  color: green;
+  font-size: 20pt;
+  vertical-align: middle;
+}
+
+#ongoing-task-table{
+  height: !important;
+  background: white;
+  border-bottom: 1px solid gray;
+  min-height: 40px;
+  padding-top: 5px;
+}
+
+.genicon-manatwork{
+  font-size: 20pt;
+  vertical-align: middle;
+}
+
+#tittle-competed-task{
+  height: 45px;
+  margin-top: 50px;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding-top: 5px;
+}
+
+#completed-task-table{
+  background: white;
+  min-height: 40px;
+  padding-top: 5px;
+  border-bottom: 1px solid gray;
+
+}
+
+.genicon-manatwork{
+  color: lightgreen;
+}
+
+.genicon-calendar-date{
+  font-size: 20pt;
+  vertical-align: middle;
+}
+
+#user-icon, #user-name{
+  height: 30px;
+  background: white;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.genicon-person{
+  font-size: 20pt;
+}
+
+
+
+
+/*==========TASK===================*/
+#topbar{
+  background: silver;
+  height: 45px;
+}
+
+#black{
+  background: lightblue;
+  height: 30px;
+}
+
+.genicon-task-hammer-plus-compact{
+  font-size: 20pt;
+  margin-top: 5px;
+
+}
+
+.btn-green {
+  background-color: #3D9400;
+  border-color: #327b00;
+  color: #fff;
+}
+
+#search-field{
+  margin-left: 1000px;
+}
+
+#title, #end, #start, #span, #budget, #cost{
+  color: black;
+  text-align: center;
+  padding-top: 3px;
+  height: 20px;
+
+}
+
+#title-field, #end-field, #start-field, #span-field, #budget-field, #cost-field, #action-field{
+  text-align: center;
+  background: white;
+  padding-top: 10px;
+  height: 50px;
+
+}
+
+#btn-edit {
+  background-color: red;
+  color: #fff;
+  height: 30px;
+}
+
+#task-form{
+  background: white;
+  height: 20px;
+}
+
+.btn-add {
+  background-color: #3D9400;
+  color: #fff;
+}
+
+#btn-save{
+     background-color: green;
+    color: #fff;
+    height: 30px;
+    }
+
+#1{
+    height: 15px;
+}
+
+
+#save{
+    background: white;
+    height: 30px;
+    vertical-align: middle;
+
+}
+
+#close{
+    background: red;
+    height: 30px;
+    vertical-align: middle;
+    background: white;
+}
+
+#edit-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.genicon-trash-stroke-compact{
+    color: black;
+    font-size: 20pt;
+}
+
+/*  Task.js.jsx Component Styles */
+.task-content {
+  position: relative;
+  top: 115px;
+  background-color: #fff;
+}
+
+.t-i-12 {
+  font-size: 15px;
+}
+
+a.data-tb-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+a.data-tb-link > span {
+  font-size: 18pt;
+  color: #777;
+}
+
+a.btn-task-color {
+  padding: 0 10px 0 0;
+  margin: 0;
+  font-size: 18pt;
+  line-height: 9pt;
+  border-right: 1px solid #777;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+a.btn-task-color:nth-child(2),
+a.btn-task-color:nth-child(3)
+{
+  padding-left: 10px;
+}
+
+
+
+
+/*========collaborator================*/
+.add-collaborator{
+  color: green;
+  vertical-align: middle;
+}
+
+.add-collaborator:hover{
+  color: green;
+  text-decoration: none;
+
+}
+
+.hammar-plus{
+  font-size: 20pt;
+
+}
+
+
+
+
+
+/*=================COLLABORATORS=============*/
+.add-collaborator{
+  color: green;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.add-collaborator:hover{
+  color: green;
+  text-decoration: none;
+}
+
+.add-collaborator:visited{
+  color: green;
+  text-decoration: none;
+}
+
+.collabortor-privillege{
+  width: 60px;
+  height: 15px;
+  border-color: white;
+}
+
+#add-collaborator-bar{
+  background:#EFEDE5 ;
+  height: 45px;
+  font-size: 15pt;
+  vertical-align: middle;
+  border-bottom: 1px solid silver;
+}
+
+#person-icon{
+  vertical-align: middle;
+  color: #8C8884;
+}
+
+#company-name-div{
+  border-bottom: 1px solid silver;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.company-name{
+  font-size: 15pt;
+}
+
+#edit-icon{
+  width: 20px;
+  height: 20px;
+}
+#edit-icon-user{
+  position: absolute;
+  top: 150px;
+  left: 40px;
+
+}
+
+#collaborators-list{
+  margin-top: 50px;
+  height: 200px;
+  position: relative;
+
+}
+.add-collaborator{
+  font-size: 12pt;
+  text-decoration: none;
+}
+
+.add-collaborator:hover{
+  text-decoration: none;
+}
+
+.ct {
+  display: block;
+  text-align: center;
+  font-size: 12pt;
+  padding: 7px 0 0 0;
+}
+
+.circle {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url('/assets/default_collaborator_pic.jpeg');
+  background-position: center;
+  background-size: contain;
+}
+
+.circle1 {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url('/assets/collaborator3.jpeg');
+  background-position: center;
+  background-size: contain;
+}
+
+.circle2 {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url('/assets/collaborator2.jpeg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.circle3 {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url('/assets/default_collaborator_pic.jpeg');
+  background-position: center;
+  background-size: contain;
+}
+
+
+#collaborator-details-div{
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 22px;
+}
+
+#collaborator-parent-div{
+  background: white;
+}
+
+
+.awaiting-confirm {
+  padding: 40% 0;
+  color: #303030;
+}
+
+
+
+/*=================BUDGET=============*/
+
+#main-container{
+  position: relative;
+  top: 100px;
+  margin-top: 70px;
+}
+
+.project-budget{
+  position: relative;
+  left: 30px;
+  font-size: 20pt;
+}
+
+.budget-report{
+  font-size: 15pt;
+  height: 40dppx;
+  vertical-align: middle;
+  margin-left: 750px;
+}
+
+#budget-report-bar{
+  height: 40px;
+}
+
+
+
+#circle-budget {
+  width: 200px;
+  height: 200px;
+  background: #DCDAD2;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
+#budget-descriptions{
+  font-size: 15pt;
+  margin-left: 10px;
+  margin-top: 200px;
+}
+
+.budget-amount{
+  position: relative;
+  top: 90px;
+  font-size: 20pt;
+  left: 30px;
+}
+
+#descriptions-div{
+  position: relative;
+  top: 120px;
+
+}
+
+.descriptions{
+  font-size: 15pt;
+  margin-left: 30px;
+}
+
+.descriptions-task-ongoing{
+
+}
+
+.descriptions-unstarted{
+  margin-left: 50px;
+}
+
+.equal{
+  margin-top: 60px;
+  margin-left: 220px;
+  height: 40px;
+  width: 40px;
+}
+
+.plus{
+  margin-top: 50px;
+  margin-left: 210px;
+  height: 60px;
+  width: 60px;
+}
+
+.descriptions-sub{
+  font-size: 10pt;
+  text-align: center;
+}
+
+
+#collaborator-details-div{
+  margin-top: 10px;
+  padding-bottom: 22px;
+  margin-right: 60px;
+  text-align: left;
+}
+
+
+
+.collaborator-name, .collaborator-privillege, .collaborator-phonea, .collaborator-emaila, .collaborator-lastupdatea{
+  text-align: center;
+}
+
+/*==========TASK SHEET===================*/
+#topbar{
+  background: silver;
+  height: 45px;
+}
+
+#black{
+  background: lightblue;
+  height: 30px;
+}
+
+.genicon-task-hammer-plus-compact{
+  font-size: 20pt;
+  margin-top: 5px;
+
+}
+
+.btn-green {
+  background-color: #3D9400;
+  border-color: #327b00;
+  color: #fff;
+}
+
+#search-field{
+  margin-left: 1000px;
+}
+
+#title, #end, #start, #span, #budget, #cost{
+  color: black;
+  text-align: center;
+  padding-top: 3px;
+  height: 20px;
+
+}
+
+#title-field, #end-field, #start-field, #span-field, #budget-field, #cost-field, #action-field{
+  text-align: center;
+  background: white;
+  padding-top: 10px;
+  height: 50px;
+
+}
+
+#btn-edit {
+  background-color: red;
+  color: #fff;
+  height: 30px;
+}
+
+#task-form{
+  background: white;
+  height: 20px;
+}
+
+.btn-add {
+  background-color: #3D9400;
+  color: #fff;
+}
+
+#btn-save{
+  background-color: green;
+  color: #fff;
+  height: 30px;
+}
+
+#1{
+  height: 15px;
+}
+
+
+#save{
+  background: white;
+  height: 30px;
+  vertical-align: middle;
+
+}
+
+#close{
+  background: red;
+  height: 30px;
+  vertical-align: middle;
+  background: white;
+}
+
+#edit-icon{
+  height: 20px;
+  width: 20px;
+}
+
+
+
+.genicon-trash-stroke-compact{
+  color: black;
+  font-size: 20pt;
+}
+
+
+
+
+
+/*=======OVERVIEW SECTIONS=================*/
+
+
+.body{
+  background: #EFEDE5;
+}
+
+.project-title{
+  position: relative;
+  font-size: 15pt;
+  color: black;
+  top: 5px;
+  left: 36%;
+}
+
+#overview-sidebar{
+  height: 500px;
+  background: #f5f5f5;
+}
+
+.contianer-sidebar-content{
+  margin-top: 95px;
+  background: #fff;
+  height: 500px;
+}
+
+#overview-topbar{
+  background: #f5f5f5;
+  /*height: 45px;*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.tc{
+  margin-top: 30px;
+  padding-left: 10px;
+  background: white;
+  height: 30px;
+}
+
+.overview-content{
+  position: relative;
+  left: 400px;
+}
+
+#main{
+  background:#EFEDE5;
+  height: 650px;
+}
+
+.genicon-file-pdf{
+  font-size: 15pt;
+}
+
+.download-report-pdf, .download-report-word{
+  position: relative;
+  height: 30px;
+  /*background: #EFEDE5;*/
+  width: 160px;
+  top:10px;
+  padding-left: 10px;
+  text-decoration:none;
+  vertical-align: middle;
+}
+
+.download-report-pdf, .download-report-word:hover{
+  text-decoration:none;
+}
+
+.file{
+  color: black;
+}
+
+#tittle-competed-task{
+  background: #EFEDE5;
+}
+
+#sidebar{
+  height: 600px;
+  background: #EFEDE5;
+}
+
+#content{
+  background: #EFEDE5;
+}
+
+#icon{
+  font-size: 7pt;
+  color: silver;
+  vertical-align: middle;
+}
+
+
+
+#status-sidebar {
+
+  height: 30px;
+  text-align: left;
+  padding-top: 10px;
+  font-size: 12pt;
+  border-bottom: 1px solid silver;
+}
+
+
+.days{
+  font-size: 50pt;
+
+}
+#days_remaining_div{
+  margin-left: 80px;
+}
+
+#bardiv
+{
+  background: #f5f5f5;
+  height: 30px;
+  text-align: center;
+}
+
+#percentage_comp_div{
+  margin-left: 50px;
+}
+
+.completed{
+  margin-right: 10px;
+  font-size: 20pt;
+
+}
+
+.progressbar_div{
+  width: 200px;
+  height: 20px;
+  background: silver;
+  margin-top: 3px;
+}
+
+
+#project_stats{
+  color: red;
+}
+
+
+#icon{
+  font-size: 20pt;
+}
+
+.text-task-lightgreen, .text-task-amber, .text-task-red{
+  font-size: 20pt;
+  vertical-align: middle;
+}
+
+.text-task-ligtgreen{
+  color: lightgreen;
+}
+
+.text-task-amber{
+  color: amber;
+}
+
+.text-task-red{
+  color: red;
+}
+
+#tasks-ongoing{
+  background: white;
+  height: 30px;
+}
+
+.genicon-task-hammer{
+  font-size: 15pt;
+}
+
+.genico-file-pdf, .genicon-file-word{
+  color: black;
+  font-size: 15pt;
+}
+
+#tittle{
+  background: #f5f5f5;
+  border-bottom: 1px solid silver;
+  border-top: 1px solid silver;
+  height: 45px;
+  padding-top: 7px;
+  text-align: left;
+}
+
+
+
+#ongoing-task-table{
+  height: !important;
+  background: white;
+  border-bottom: 1px solid gray;
+  min-height: 40px;
+  padding-top: 5px;
+}
+
+.genicon-manatwork{
+  font-size: 20pt;
+  vertical-align: middle;
+}
+
+#tittle-competed-task{
+  height: 45px;
+  margin-top: 10px;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  padding-top: 5px;
+  background: #f5f5f5;
+}
+
+#completed-task-table{
+  background: white;
+  min-height: 40px;
+  padding-top: 5px;
+  border-bottom: 1px solid gray;
+
+}
+
+#download-drill{
+  font-size: 10pt;
+  vertical-align: baseline;
+}
+
+.genicon-file-spreadsheet{
+  font-size: 15pt;
+  vertical-align: bottom;
+}
+
+.genicon-manatwork{
+  color: lightgreen;
+}
+
+.genicon-calendar-date{
+  font-size: 20pt;
+  vertical-align: middle;
+  color: silver;
+}
+
+.genicon-warning-flag-compact{
+  color: red;
+}
+
+.genicon-manatwork-compact {
+  color: lightgreen;
+}
+
+.genicon-timer{
+  font-size: 20pt;
+  color: #f0ad4e;
+  vertical-align: middle;
+}
+
+.genicon-warning-flag-compact{
+  color: amber;
+}
+
+#user-icon, #user-name{
+  height: 30px;
+  background: white;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+
+/*==========DRILLDWON======*/
+.sidebar-and-content-div{
+  margin-top: 140px;
+}
+
+
+#drill-content{
+  background: white;
+  height: 500px;
+}
+
+#drill-sidebar{
+  height: 500px;
+  vertical-align: middle;
+
+}
+
+#drill-assignee{
+  text-align: left;
+  vertical-align: middle;
+}
+
+.drill-table{
+  position: relative;
+  top:70px;
+  background: #f5f5f5;
+}
+
+
+
+.drill-table-list{
+  position: relative;
+  top:80px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f5f5f5;
+  border-left: 2px solid #f5f5f5;
+}
+
+#drill-row{
+  padding-top: 5px;
+  border-top:1px solid #f5f5f5;
+  height: 45px;
+}
+
+#row{
+  height: 30px;
+}
+
+#name{
+  padding-left: 20px;
+}
+
+
+#drill-bell{
+  color: #ff0000;
+  font-size: 20pt;
+}
+
+#drill-due-date{
+  padding-left: 5px;
+  text-align: right;
+}
+
+#center{
+  text-align: center;
+}
+
+#drill-assignee-title{
+  text-align: left;
+}
+
+.drill-down-instruction{
+  font-size: 12pt;
+  position: relative;
+  top:20px;
+}
+
+/* DRILL DOWN STYLES */
+
+.drill-criteria {
+  border-right: 1px solid rgba(0,0,0, 0.3);
+  padding: 0 5px 0 6px;
+  background: #F5F4F9;
+}
+
+.drill-criteria .head {
+  padding: 15px 0 0 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 7px;
+}
+
+
+.drill-criteria .checkbox {
+  padding-left: 15px;
+}
+
+.drill-criteria span.reload {
+  line-height: 30px;
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+}
+
+
+.drill-criteria .input-sm {
+  margin-top: 10px;
+}
+
+
+/* Drill Down Icons */
+.text-warm-grey-4 {
+  color: #8C8884;
+}
+
+.text-warm-grey-5 {
+  color: #6E6769;
+}
+
+.text-task-light-green {
+  color: #6DBF87;
+}
+
+#drill-person{
+  vertical-align: middle;
+  text-align: left;
+  font-size: 12pt;
+  color: silver;
+}
+
+.text-task-amber {
+  color: #FF7404;
+}
+
+.text-task-red {
+  color: #F12B5E;
+}
+
+.text-task-blue {
+  color: #04BBDC!important;
+}
+
+.text-task-dark-green {
+  color: #457B56!important;
+}
+
+.g-sm {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+
+
+
+
+
+#genibell{
+  color: #F12B5E;
+  font-size: 15pt;
+}
+
+#geniman{
+  color: lightgreen;
+  font-size: 15pt;
+}
+
+#geniexcla{
+  color: red;
+  font-size: 15pt;
+}
+#genicalender{
+  font-size: 15pt;
+}
+#genidotted{
+  font-size: 15pt;
+}
+
+#genigreen{
+  color: green;
+  font-size: 15pt;
+}
+
+#geniflag{
+  color: #FF7404;
+  font-size: 15pt;
+}
+
+
+/*=================TASKSHEET================*/
+.print_instructions_div{
+  position: relative;
+  top:100px;
+}
+
+
+#pdf-icon-tasksheet{
+  font-size: 15pt;
+  color: red;
+  vertical-align: middle;
+}
+
+.title-tasksheet{
+  font-size: 12pt;
+}
+
+.download-print-title{
+  position: relative;
+  top:170px;
+  font-size: 12pt;
+  padding-left: 30px;
+}
+
+#tasksheet{
+  background: lightblue;
+  height: 30px;
+}
+
+.tasksheet_tittle{
+  font-size: x-large;
+  padding-left: 50px;
+}
+
+.print_instructions_div{
+  padding-top: 50px;
+}
+
+#instructions{
+  background: #f5f5f5;
+  height: inherit;
+  border:25px solid white;
+}
+
+.s{
+  font-size: x-large;
+}
+.steps{
+  font-size: larger;
+  color: red;
+}
+
+.selectbox{
+  width: 200px;
+  height: 30px;
+}
+
+
+.selectproject{
+  font-size: x-large;
+  color: red;
+}
+
+
+.downloadbut{
+  width: 150px;
+  height: 30px;
+
+}
+#instructions ol {
+  margin: 20px 0 0 0;
+}
+
+#instructions ol > li {
+  padding: 0 0 10px 0;
+  font-size: 12pt;
+}
+
+
+
+
+/*===== MEDIA QUERIES=========*/
+/*=====DRILL DOWNN====*/
+#drill-sidebar{
+  display: block;
+}
+
+@media (max-width: 1000px)
+{
+  #drill-sidebar
+  {
+    display: none;
+    position: inherit;
+    width: 200px;
+
+  }
+  #accordion{
+    width: 200px;
+  }
+}
+
+
+
+
+/*========OVERVIEW====*/
+
+@media (max-width: 640px)
+{
+  #overview-sidebar {
+    font-size: 8pt;
+    width: 100%;
+    //background: lightskyblue;
+  }
+  #days_remaining_div{
+    margin-left: 35%;
+  }
+  #percentage_comp_div{
+    margin-left: 25%;
+    width: 70%;
+  }
+
+  #overview-content{
+    font-size: 9pt;
+  }
+
+
+}
+
+

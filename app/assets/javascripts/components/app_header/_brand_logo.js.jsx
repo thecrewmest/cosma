@@ -6,7 +6,7 @@ var BrandLogo = React.createClass({
                     <span className="clip-list-2"></span>
                 </button>
 
-                <a className="navbar-brand" href="index.html">
+                <a className="navbar-brand" href="/dashboard">
                     BIDII
                 </a>
             </div>
